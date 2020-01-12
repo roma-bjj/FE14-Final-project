@@ -31,14 +31,13 @@ body {
 	margin: 0;
 }
 
-/* All Styles for <HEADER> */
+/* ---All Styles for <HEADER>--- */
 
 header {
 	background: #000000;
 	background: -webkit-linear-gradient(to right, #434343, #000000);
 	background: linear-gradient(to right, #434343, #000000);
 	width: 100%;
-	margin-bottom: 100%;
 }
 
 /* Styles for #MAIN-MENU */
@@ -81,8 +80,8 @@ ul.main-menu-list li.main-list:after {
 	position: absolute;
 	top: 0;
 	left: 12em;
-	border-right: .1em outset #E1E1E1;
 	height: 4.1em;
+	border-right: .1em outset #E1E1E1;
 }
 
 ul.main-menu-list li.last-main-list:after {
@@ -160,7 +159,7 @@ img#main-logo {
 	display: none;
 }
 
-/*Styles for FOOTER */
+/* ---Styles for FOOTER--- */
 
 footer {
 	display: flex;
