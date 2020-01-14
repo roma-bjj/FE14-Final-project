@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>INTELLIGENT JJ ACADEMY</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/main-img/main-logo.png">
-	<link rel="stylesheet" type="text/css" href="css/intelligent.css">
 	<link rel="stylesheet" href="css/intelligent2-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/intelligent.css">
 	<link rel="stylesheet" type="text/css" href="css/int-media.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -35,8 +35,8 @@
 				</ul>
 			</li>
 			<li class="main-list"><a href="">Competitions</a></li>
-			<li class="main-list"><a href="">Schedule</a></li>
-			<li class="main-list last-main-list"><a href="">Contacts</a></li>
+			<li class="main-list"><a href="#schedule">Schedule</a></li>
+			<li class="main-list last-main-list"><a href="#contact">Contacts</a></li>
 		</ul>
 	</nav>
 	<div id="main-slider"></div>
@@ -48,35 +48,35 @@
 	<h1>Respect everyone Fear no one</h1>
 	<nav class="bread-nav">
 		<ul class="bread-ul">
-			<li class="bread-li"><a href="">TEAM</a></li>
-			<li class="bread-li"><a href="">PROFESSOR</a></li>
-			<li class="bread-li"><a href="">ADMINISTRATION</a></li>
+			<li class="bread-li bread-li-one bread-active"onclick="ChooseBreadOne()"><span>TEAM</span></li>
+			<li class="bread-li bread-li-two" onclick="ChooseBreadTwo()"><span>PROFESSOR</span></li>
+			<li class="bread-li bread-li-three" onclick="ChooseBreadThree()"><span>ADMINISTRATION</span></li>
 		</ul>
 	</nav>
 
 	<article id="head-block-second">
-		<section class="team">
+		<section class="hb-second-one team">
 			<img src="img/others-img/m-team.jpg" alt="Team">
 			<div>
-				<h2>Team</h2>
+				<h2 class="hb">Team</h2>
 				<p>The brazilian Jiu Jitsu Academy "Intelligent Jiu-Jitsu Academy" is created to promote a healthy lifestyle and to engage the population in Brazilian Jiu-Jitsu as one of the most effective martial arts, self-defense system and sports discipline.</p>
 				<p>The Academy is headed by Professor Artem Sidorov (brazilian jiu-jitsu black belt).</p>
 			</div>
 		</section>
-		<section class="professor">
+		<section class="hb-second-two professor">
 			<img src="img/others-img/m-coach.jpg" alt="Professor">
 			<div>
-				<h2>Professor</h2>
+				<h2 class="hb">Professor</h2>
 				<p>Founder and Head Instructor:  
 				black belt, Professor Artem Sidorov</p>
 				<p>2017 Gi IBJJF European champion (brown belts)</p>
 				<a href="https://www.instagram.com/sidorov_ai/" target="blank"><i class="fab fa-instagram"></i>sidorov_ai</a>
 			</div>
 		</section>
-		<section class="administration">
+		<section class="hb-second-three administration">
 			<img src="img/others-img/m-anna.jpg" alt="Anna Hayduchenko">
 			<div>
-				<h2>Administration</h2>
+				<h2 class="hb">Administration</h2>
 				<p>Anna Hayduchenko - black belt</p>
 				<p>2019 Gi IBJJF European champion (brown belts)</p>
 				<p>2019 Gi IBJJF Absolute European champion (brown belts)</p>
@@ -85,30 +85,51 @@
 			</div>
 		</section>
 	</article>
+</article>
+
+<article class="scedule">
+	<h2><a name="schedule">Schedule</a></h2>
+	<section class="schedule-section">
+
+		<picture class="schedule-pic">
+			<source srcset="img/others-img/schedule.webp" type="image/webp">
+	   		<img class="schedule-img" src="img/others-img/schedule.jpg"/>
+		</picture>
+
+		<form id="form" action="#" method="post" autocomplete="off" enctype="text/plane">
+			<span id="connect-form">Sign up for a free lesson!</span> <br>
+			<label> Name Surname <br>
+			<input class="user" type="text" required placeholder="Name Surname" maxlength="100" /></label> <br>
+			<label> Instagram / Facebook / Telegram <br>
+			<input class="user" type="text" required placeholder="@Instagram" maxlength="150" /></label> <br>
+			<label>Telephone (Ukraine) <br>
+			<input class="user" type="tel" required placeholder="+38-0XX-XXX-XX-XX" pattern="[\+]\d{2}[\-]\d{3}[\-]\d{3}[\-]\d{2}[\-]\d{2}" title="enter in the specified format" /></label> <br>
+			<input id="submit" type="submit" value="Sing up"/>
+		</form>
+
+	</section>
 
 </article>
 
-
 <footer>
+	<h2><a id="contact" name="contact">CONTACTS</a></h2>
 	<section id="contacts">
+		<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.2509524408506!2d30.531949990756864!3d50.45144074017285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa54c6af06b%3A0xd89dc64da4374cd1!2sIntelligent%20Jiu-Jitsu%20Academy!5e0!3m2!1sen!2sua!4v1578318899731!5m2!1sen!2sua" width="450" height="420" frameborder="0" style="border:2px outset black;" allowfullscreen=""></iframe>
 		<div id="text-contacts">
-		<h2><a id="contact" name="contact">CONTACTS</a></h2>
 		<strong>
 		<ul id="icon-list-contact">
-			<li><address><i class="fas fa-map-marker-alt"></i><span>
-			MykhailaHrushevskoho St,3A,Kyiv</span> 
-			</address> </li>
-			<li><i class="fab fa-facebook-f"></i><span> facebook.com/intelligent.bjj</span></li>
-			<li><i class="fab fa-instagram"></i><span> @intelligent.bjj @sidorov_ai</span></li>
-			<li><i class="fab fa-telegram-plane"></i><span> @ArtemINTELLIGENT</span></li> 
-			<li><i class="far fa-envelope"></i><span>intelligent.bjj@gmail.com</span></li>
-			<li><i class="fas fa-mobile-alt"></i><span>096 599 0001</span></li>
+			<li><address><i class="fas fa-map-marker-alt"></i>
+			Mykhaila Hrushevskoho St, 3A 
+			</address></li>
+			<li>@intelligent.bjj</li>
+			<li>facebook.com/intelligent.bjj</li>
+			<li>intelligent.bjj@gmail.com</li>
+			<li>+38-096-599-00-01</li>
 			</strong>
 		</ul>
 		</div>
-		<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.2509524408506!2d30.531949990756864!3d50.45144074017285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa54c6af06b%3A0xd89dc64da4374cd1!2sIntelligent%20Jiu-Jitsu%20Academy!5e0!3m2!1sen!2sua!4v1578318899731!5m2!1sen!2sua" width="450" height="420" frameborder="0" style="border:2px outset black;" allowfullscreen=""></iframe>
 	</section>
-	<section id="menu-icon">
+		<section id="menu-icon">
 		<ul class="icon-contact">
 			<li class="icon"><a href="https://instagram.com/intelligent.bjj?igshid=tkjde4sx96id" target="blank"><i class="fab fa-instagram"></i></a></li>
 			<li class="icon"><a href="https://facebook.com/intelligent.bjj" target="blank"><i class="fab fa-facebook-f"></i></a></li>
