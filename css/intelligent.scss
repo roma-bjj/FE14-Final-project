@@ -28,6 +28,19 @@ $vividRed: #EC0800;
 	background: $bgYellow;
 }
 
+	// ---------------Animations--------
+
+@keyframes show {
+	0% {
+	opacity: 0;
+	transform: scale(0.9);
+	}
+	100% {
+	opacity: 1;
+	transform: scale(1.0);
+	}
+}
+
 	// ----------------------------------
 
 article.head-block { 
@@ -257,5 +270,215 @@ article.scedule {
 				}
 			}
 		}
+}
 
+ // Styles for HISTORY -------------
+
+h2#h-history {				
+	margin: 3%;
+	padding-bottom: 0;
+	text-align: center;
+	color: #E1E1E1;
+	letter-spacing: .1em;
+
+		a{
+		text-decoration: none;
+		font-family: 'Arial';
+		font-size: 1.8em;
+		}
+}
+
+article#history {
+			background: transparent;
+			display: block;
+			width: 94%;
+			margin: 3%;
+			padding: 0;
+
+				img {
+					margin-bottom: 3%;
+					padding-left:0;
+					width: 100%;
+					border-radius: .5em;
+					}
+
+					section#info-history {
+						background: transparent;
+						display: block;
+						width: 96%;
+						padding: 2%;
+						border-radius: .5em;
+
+							p {
+							font-family: 'Arial';
+							font-size: 1.2em;
+							color: #E1E1E1;
+							}
+					}
+}					
+
+//------Styles for PAGINATION 
+
+article#athletes {
+	@include dark-block;
+	width: 100%;
+	padding: 0;
+
+		h2 {
+			margin: 3%;
+			padding-bottom: 0;
+			text-align: center;
+			letter-spacing: .1em;
+
+				a {
+				text-decoration: none;
+				font-family: 'Arial';
+				font-size: 1.8em;
+				color: #E1E1E1;
+				}
+		}
+}
+
+.athlet {
+	background: transparent;
+	display: block;
+	width: 100%;
+	position: relative;
+	padding: 0;
+}
+
+.athlet-div {
+	backfround: transparent;
+	display: none;
+	justify-content: space-around;
+	width: 100%;
+	padding: 0;
+	margin-top: 5%;
+
+		.hide {
+			display: none;
+		}
+		.show {
+			display: flex;
+			justify-content: space-around;
+			animation: show 2s ease;
+		}
+
+		img{
+		width: 30%;
+		border-radius: .5em;
+		}
+
+		div.athlet-info {
+
+			h3 {
+			margin: 0;
+			font-family: "Arial";
+			font-size: 1.5em;
+			font-weight: 800;
+			color: yellow;
+			}
+
+			span.athlet-span {
+			font-family: "Arial";
+			font-size: 1.2em;
+			font-weigth: 400;
+			color: #E1E1E1;
+			}
+		}	
+}
+
+.hide {
+	display: none;
+}
+.show {
+	display: flex;
+	justify-content: space-around;
+	animation: show 2s ease;
+}
+
+.pagination {
+	width: 90%;
+	float: left;
+	padding: 5%;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+
+		.prev {
+		position:relative;
+		color: #E1E1E1;
+		border: 1px outset #F9D423;
+		border-radius: .3em .3em .3em .3em;
+		padding: .5em;
+		margin-right: 5%;
+		margin-left: 30%;
+		font-size: 1.5em;
+		text-align: center;
+		cursor: pointer;
+		}
+
+		.next {
+		position:relative;
+		color: #E1E1E1;
+		border: 1px outset #F9D423;
+		border-radius: .3em .3em .3em .3em;
+		padding: .5em;
+		margin-left: 5%;
+		margin-right: 30%;
+		font-size: 1.5em;
+		text-align: center;
+		cursor: pointer;
+		}
+
+		.prev.disabled, .next.disabled {
+		opacity: 0.3;
+		pointer-events: none;
+		}
+
+		.prev:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		@include yellow-block;
+		border-radius: .3em .3em .3em .3em;
+		transition: all .2s ease;
+		}
+
+		.next:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 0%;
+		height: 100%; 
+		@include yellow-block;
+		border-radius: .3em .3em .3em .3em;
+		transition: all .2s ease;
+		}
+
+		.prev:hover:before {
+		width: 100%;
+		right: 0;
+		left: auto;
+		}
+
+		.next:hover:before {
+		width: 100%;
+		left: 0;
+		right: auto;
+		}
+
+		.prev:hover, .next:hover {
+		color: black;
+		transition: color 2s ease;
+		}
+
+		b {
+		position: relative;
+		z-index: 10;
+		}
 }

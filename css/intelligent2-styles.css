@@ -1,3 +1,13 @@
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 article.head-block {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -211,4 +221,193 @@ article.scedule section.schedule-section form #submit {
   border: 0.1em outset red;
   font-size: 1.5em;
   color: yellow;
+}
+
+h2#h-history {
+  margin: 3%;
+  padding-bottom: 0;
+  text-align: center;
+  color: #E1E1E1;
+  letter-spacing: 0.1em;
+}
+h2#h-history a {
+  text-decoration: none;
+  font-family: "Arial";
+  font-size: 1.8em;
+}
+
+article#history {
+  background: transparent;
+  display: block;
+  width: 94%;
+  margin: 3%;
+  padding: 0;
+}
+article#history img {
+  margin-bottom: 3%;
+  padding-left: 0;
+  width: 100%;
+  border-radius: 0.5em;
+}
+article#history section#info-history {
+  background: transparent;
+  display: block;
+  width: 96%;
+  padding: 2%;
+  border-radius: 0.5em;
+}
+article#history section#info-history p {
+  font-family: "Arial";
+  font-size: 1.2em;
+  color: #E1E1E1;
+}
+
+article#athletes {
+  background: #000000;
+  background: linear-gradient(to right, #434343, #000000);
+  width: 100%;
+  padding: 0;
+}
+article#athletes h2 {
+  margin: 3%;
+  padding-bottom: 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+article#athletes h2 a {
+  text-decoration: none;
+  font-family: "Arial";
+  font-size: 1.8em;
+  color: #E1E1E1;
+}
+
+.athlet {
+  background: transparent;
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+.athlet-div {
+  backfround: transparent;
+  display: none;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  margin-top: 5%;
+}
+.athlet-div .hide {
+  display: none;
+}
+.athlet-div .show {
+  display: flex;
+  justify-content: space-around;
+  animation: show 2s ease;
+}
+.athlet-div img {
+  width: 30%;
+  border-radius: 0.5em;
+}
+.athlet-div div.athlet-info h3 {
+  margin: 0;
+  font-family: "Arial";
+  font-size: 1.5em;
+  font-weight: 800;
+  color: yellow;
+}
+.athlet-div div.athlet-info span.athlet-span {
+  font-family: "Arial";
+  font-size: 1.2em;
+  font-weigth: 400;
+  color: #E1E1E1;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+  justify-content: space-around;
+  animation: show 2s ease;
+}
+
+.pagination {
+  width: 90%;
+  float: left;
+  padding: 5%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.pagination .prev {
+  position: relative;
+  color: #E1E1E1;
+  border: 1px outset #F9D423;
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  padding: 0.5em;
+  margin-right: 5%;
+  margin-left: 30%;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+}
+.pagination .next {
+  position: relative;
+  color: #E1E1E1;
+  border: 1px outset #F9D423;
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  padding: 0.5em;
+  margin-left: 5%;
+  margin-right: 30%;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+}
+.pagination .prev.disabled, .pagination .next.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.pagination .prev:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #e65c00;
+  background: linear-gradient(to right, #F9D423, #e65c00);
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  transition: all 0.2s ease;
+}
+.pagination .next:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: #e65c00;
+  background: linear-gradient(to right, #F9D423, #e65c00);
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  transition: all 0.2s ease;
+}
+.pagination .prev:hover:before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+.pagination .next:hover:before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.pagination .prev:hover, .pagination .next:hover {
+  color: black;
+  transition: color 2s ease;
+}
+.pagination b {
+  position: relative;
+  z-index: 10;
 }

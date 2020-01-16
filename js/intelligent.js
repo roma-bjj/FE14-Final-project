@@ -9,6 +9,7 @@ const liBreadOne = document.querySelector('.bread-li-one');
 const liBreadTwo = document.querySelector('.bread-li-two');
 const liBreadThree = document.querySelector('.bread-li-three');
 
+
 liBreadOne.onclick = function ChooseBreadOne () {
 	liBreadOne.classList.add('bread-active');
 	document.querySelector('.hb-second-one').style.display = 'flex';
@@ -39,4 +40,3 @@ liBreadThree.onclick = function ChooseBreadThree () {
 			document.querySelector('.hb-second-two').style.display = 'none';
 		} 
 }
-
