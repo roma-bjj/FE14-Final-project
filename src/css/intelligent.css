@@ -1,3 +1,15 @@
+@keyframes slider-header {
+  from, to, 45% {
+    background-image: url(../img/main-img/h-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  50%, 95% {
+    background-image: url(../img/main-img/h-belt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
 @keyframes show {
   0% {
     opacity: 0;
@@ -16,6 +28,330 @@
     transform: scale(1);
   }
 }
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.1em #4C5B5B;
+  border-radius: 0.9em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: -webkit-linear-gradient(top, #434343, #000000);
+  border-radius: 0.3em;
+}
+
+body {
+  margin: 0;
+  background: #000000;
+  background: linear-gradient(to right, #434343, #000000);
+  font-family: "Arial";
+}
+
+/* ---All Styles for <HEADER>--- */
+header {
+  background: #000000;
+  background: linear-gradient(to right, #434343, #000000);
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+/* Styles for #MAIN-MENU */
+div.menu-burger-wrapper {
+  display: none;
+}
+
+.main-menu {
+  width: 100%;
+  height: 10vh;
+}
+
+ul.main-menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+ul.main-menu-list li.main-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  float: left;
+  position: relative;
+  margin-right: 0;
+  padding: 0;
+  width: 10em;
+  height: 4.1em;
+  margin-right: 0;
+}
+
+ul.main-menu-list li.main-list:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12em;
+  height: 4em;
+  border-right: 0.1em outset #E1E1E1;
+}
+
+ul.main-menu-list li.last-main-list:after {
+  display: none;
+}
+
+ul.main-menu-list li.main-list a {
+  position: absolute;
+  text-decoration: none;
+  font-style: "Arial";
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #E1E1E1;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+ul.main-menu-list li.main-list a:hover {
+  opacity: 1;
+  color: yellow;
+  border-bottom: 0.1em outset yellow;
+  transition: 0.2s;
+}
+
+ul.second-level {
+  display: none;
+  position: absolute;
+  list-style: none;
+  margin-top: 6.3em;
+  padding-left: 0;
+  left: -21%;
+  width: 14em;
+  border: 0.1em outset transparent;
+  z-index: 99;
+}
+
+ul.second-level li {
+  background: #000000;
+  background: linear-gradient(to right, #434343, #000000);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  height: 4.1em;
+  margin-bottom: 0.1em;
+  z-index: 100;
+}
+
+ul.second-level li a {
+  position: absolute;
+  text-decoration: none;
+  font-style: "Arial";
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #E1E1E1;
+  opacity: 0.9;
+  z-index: 101;
+}
+
+ul.main-menu-list li.main-list:hover ul.second-level {
+  display: block;
+}
+
+/* Styles for #MAIN-SLIDER */
+div#main-slider {
+  animation: slider-header 30s infinite cubic-bezier(1, 0.28, 0, 0.79);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+img#main-logo {
+  display: none;
+}
+
+/* ---Styles for Contacts--- */
+.article-contacts {
+  background: transparent;
+  width: 94%;
+  height: auto;
+  margin: 3%;
+  margin-bottom: 0;
+}
+
+section#contacts {
+  background: #ADA996;
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  padding-bottom: 1%;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+h2 {
+  margin: 0;
+  padding-bottom: 5%;
+  font-family: "Arial";
+  text-align: center;
+  color: #E1E1E1;
+}
+
+h2 a {
+  text-decoration: none;
+  font-family: "Arial";
+  font-size: 1.8em;
+}
+
+div#text-contacts {
+  background: transparent;
+  width: 45%;
+  color: #F9D423;
+}
+
+ul#icon-list-contact {
+  margin: 0;
+  padding-left: 0;
+}
+
+ul#icon-list-contact li {
+  display: block;
+  margin-left: 15%;
+  padding-bottom: 10%;
+  list-style: none;
+  font-size: 1.8em;
+  color: black;
+}
+
+ul#icon-list-contact i {
+  display: inline-block;
+  position: absolute;
+  padding-bottom: 10%;
+  font-size: 2em;
+  color: #991A1A;
+}
+
+/* Styles for #MENU-ICON */
+section#menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  background: transparent;
+  position: relative;
+}
+
+ul.icon-contact {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ul.icon-contact li.icon {
+  position: relative;
+  list-style: none;
+  width: 6em;
+  height: 6em;
+  margin: 0 2em;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+ul.icon-contact li.icon:before,
+ul.icon-contact li.icon:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #000;
+  filter: blur(1em);
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+}
+
+ul.icon-contact li.icon:after {
+  filter: blur(2em);
+}
+
+ul.icon-contact li.icon:hover:before,
+ul.icon-contact li.icon:hover:after {
+  opacity: 1;
+}
+
+ul.icon-contact li.icon > a {
+  position: absolute;
+  background-color: #EC8F9D;
+  top: 0.6em;
+  left: 0.6em;
+  right: 0.6em;
+  bottom: 0.6em;
+  text-align: center;
+  line-height: 2.5em;
+  font-size: 1.7em;
+  color: white;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+ul.icon-contact li.icon > a > i {
+  text-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+ul.icon-contact li.icon > a:hover > i {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+ul.icon-contact li.icon:nth-child(1) a,
+ul.icon-contact li.icon:nth-child(1):before,
+ul.icon-contact li.icon:nth-child(1):after {
+  background: #ff0099;
+  background: linear-gradient(to left, #ff0099, #493240);
+}
+
+ul.icon-contact li.icon:nth-child(2) a,
+ul.icon-contact li.icon:nth-child(2):before,
+ul.icon-contact li.icon:nth-child(2):after {
+  background: #00d2ff;
+  background: linear-gradient(to left, #00d2ff, #3a7bd5);
+}
+
+ul.icon-contact li.icon:nth-child(3) a,
+ul.icon-contact li.icon:nth-child(3):before,
+ul.icon-contact li.icon:nth-child(3):after {
+  background: #4b6cb7;
+  background: linear-gradient(to left, #4b6cb7, #182848);
+}
+
+ul.icon-contact li.icon:nth-child(4) a,
+ul.icon-contact li.icon:nth-child(4):before,
+ul.icon-contact li.icon:nth-child(4):after {
+  background: #0f9b0f;
+  background: linear-gradient(to right, #000000, #0f9b0f);
+}
+
+.up {
+  position: absolute;
+  right: 3%;
+  font-size: 4em;
+  color: #E1E1E1;
+  opacity: 0.1;
+}
+
+.up:hover {
+  opacity: 0.3;
+}
+
 article.head-block {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -112,7 +448,7 @@ article#head-block-second {
   padding-bottom: 6%;
 }
 
-section {
+.hb-section {
   background: #ADA996;
   background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
   display: flex;
@@ -123,30 +459,33 @@ section {
   overflow: auto;
   animation: show 2s ease;
 }
-section img {
-  max-width: 100%;
-  height: 70vh;
+.hb-section .hb-img {
+  max-width: 35%;
+  max-height: 35%;
   object-fit: cover;
 }
-section div h2.hb {
+.hb-section .hb-info {
+  padding-left: 2%;
+}
+.hb-section .hb-info h2.hb {
   margin-top: 0;
   font-family: "Arial";
   font-size: 1.8em;
   text-align: center;
   color: black;
 }
-section div p {
+.hb-section .hb-info p {
   font-family: "Arial";
   font-size: 1.2em;
 }
-section div a {
+.hb-section .hb-info a {
   text-decoration: none;
   font-family: "Arial";
   font-size: 1.2em;
   letter-spacing: 0.1em;
   color: #991A1A;
 }
-section div a i {
+.hb-section .hb-info a i {
   font-size: 1.3em;
 }
 
@@ -155,8 +494,7 @@ section div a i {
 }
 
 article.scedule {
-  background: #000000;
-  background: linear-gradient(to right, #434343, #000000);
+  background: transparent;
 }
 article.scedule h2 {
   margin: 0;
@@ -170,47 +508,85 @@ article.scedule h2 a {
   font-family: "Arial";
   font-size: 1.8em;
 }
-article.scedule section.schedule-section {
+
+.block-sch {
+  display: grid;
+  grid-template-areas: "section section section section section";
+  margin: 6% 3% 0 3%;
+}
+
+.schedule-section {
+  background: #e65c00;
+  background: linear-gradient(to right, #F9D423, #e65c00);
+  margin: 3%;
+  padding-top: 5%;
+  height: auto;
+  border-radius: 0.5em;
+}
+.schedule-section i.far {
+  display: flex;
+  justify-content: center;
+  font-size: 2.8em;
+}
+.schedule-section .h-sch {
+  color: black;
+  font-size: 1.8em;
+  text-align: center;
+  color: #991A1A;
+}
+.schedule-section .day-sch {
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+}
+.schedule-section .time-sch {
+  font-size: 1.2em;
+  font-weight: 800;
+  text-align: center;
+}
+.schedule-section .format-sch {
+  font-size: 1.2em;
+  font-weight: 800;
+  text-align: center;
+  font-style: Italic;
+}
+.schedule-section mark {
   background: #000000;
   background: linear-gradient(to right, #434343, #000000);
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-  padding-top: 6%;
-  padding-bottom: 3%;
-}
-article.scedule section.schedule-section picture.schedule-pic {
-  width: 50%;
-}
-article.scedule section.schedule-section picture.schedule-pic img.schedule-img {
-  width: 100%;
-  height: 100%;
+  color: yellow;
+  padding: 0.5em;
   border-radius: 0.5em;
-  border: 0.2em outset black;
-  padding: 0;
 }
-article.scedule section.schedule-section form {
+
+.schedule-section-white {
+  background: #ADA996;
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+}
+.schedule-section-white mark {
+  color: #E1E1E1;
+}
+
+form {
   background: transparent;
   padding: 0%;
-  width: 40%;
   font-family: "Arial";
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 1.1em;
+  font-weight: 200;
   text-align: center;
   color: yellow;
   text-shadow: 0 0.2em 0.2em rgba(236, 14, 29, 0.9);
 }
-article.scedule section.schedule-section form span {
+form span {
   display: block;
   margin-bottom: 5%;
-  font-size: 1.8em;
-  font-weight: 600;
+  font-size: 1.2em;
+  font-weight: 400;
   text-align: center;
   color: red;
   text-decoration: underline;
   text-shadow: 0 0.2em 0.2em rgba(236, 14, 29, 0.5);
 }
-article.scedule section.schedule-section form input {
+form input {
   background: #ADA996;
   background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
   margin: 5%;
@@ -222,7 +598,7 @@ article.scedule section.schedule-section form input {
   color: black;
   box-shadow: outset 0px -31px 75px -30px #edf50a;
 }
-article.scedule section.schedule-section form #submit {
+form #submit {
   margin-top: 5%;
   padding: 3%;
   background: transparent;
@@ -317,6 +693,7 @@ article#athletes h2 a {
 .athlet-div img {
   width: 40%;
   height: 80vh;
+  object-fit: cover;
   border-radius: 0.5em;
   padding: 0;
 }
@@ -467,7 +844,7 @@ section.my-gallery div.section-title h1 {
 .gallery-items .g-item .g-img {
   width: 100%;
   height: 100%;
-  object-kit: contain;
+  object-fit: cover;
   border-radius: 0.5em;
   z-index: 1;
 }
@@ -525,16 +902,17 @@ section.my-gallery div.section-title h1 {
 
 .lightbox-content {
   position: relative;
-  padding-top: 6%;
+  max-width: 700px;
+  max-height: 600px;
+  margin: 10%;
 }
 
 .lightbox-img {
-  max-width: 100%;
-  max-height: 90vh;
-  width: 100%;
-  height: 90vh;
-  object-kit: contain;
+  max-width: 700px;
+  max-height: 600px;
+  object-fit: contain;
   padding: 0;
+  margin: 0;
   border-radius: 0.5em;
   cursor: pointer;
   animation: lightImage 0.5s ease;
@@ -543,22 +921,19 @@ section.my-gallery div.section-title h1 {
 .lightbox-caption {
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 1.2em;
   color: yellow;
   left: 0;
-  width: 100%;
+  width: 50%;
   z-index: -1;
 }
 
 .lightbox-close {
   position: absolute;
-  top: 0;
+  top: -1%;
   right: 0;
-  width: 7%;
-  height: 10%;
-  font-size: 5em;
-  font-weight: 900;
+  font-size: 2em;
   color: #E1E1E1;
   cursor: zoom-out;
   z-index: 101;
@@ -593,6 +968,7 @@ section.my-gallery div.section-title h1 {
   border-radius: 0.5em;
   font-size: 1.8em;
   color: black;
+  cursor: pointer;
 }
 .card-header h2.h2-accordeon-active {
   background: #e65c00;

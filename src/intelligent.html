@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>INTELLIGENT JJ ACADEMY</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/main-img/main-logo.png">
-	<link rel="stylesheet" href="css/intelligent2-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/intelligent.css">
 	<link rel="stylesheet" type="text/css" href="css/int-media.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -48,24 +47,24 @@
 	<h1>Respect everyone Fear no one</h1>
 	<nav class="bread-nav">
 		<ul class="bread-ul">
-			<li class="bread-li bread-li-one bread-active"onclick="ChooseBreadOne()"><span>TEAM</span></li>
-			<li class="bread-li bread-li-two" onclick="ChooseBreadTwo()"><span>PROFESSOR</span></li>
-			<li class="bread-li bread-li-three" onclick="ChooseBreadThree()"><span>ADMINISTRATION</span></li>
+			<li class="bread-li bread-li-one bread-active"><span>TEAM</span></li>
+			<li class="bread-li bread-li-two"><span>PROFESSOR</span></li>
+			<li class="bread-li bread-li-three"><span>ADMINISTRATION</span></li>
 		</ul>
 	</nav>
 
 	<article id="head-block-second">
-		<section class="hb-second-one team">
-			<img src="img/others-img/m-team.jpg" alt="Team">
-			<div>
+		<section class="hb-section hb-second-one team">
+			<img class="hb-img" src="img/others-img/m-team.jpg" alt="Team">
+			<div class="hb-info">
 				<h2 class="hb">Team</h2>
 				<p>The brazilian Jiu Jitsu Academy "Intelligent Jiu-Jitsu Academy" is created to promote a healthy lifestyle and to engage the population in Brazilian Jiu-Jitsu as one of the most effective martial arts, self-defense system and sports discipline.</p>
 				<p>The Academy is headed by Professor Artem Sidorov (brazilian jiu-jitsu black belt).</p>
 			</div>
 		</section>
-		<section class="hb-second-two professor">
-			<img src="img/others-img/m-coach.jpg" alt="Professor">
-			<div>
+		<section class="hb-section hb-second-two professor">
+			<img class="hb-img" src="img/others-img/m-coach.jpg" alt="Professor">
+			<div class="hb-info">
 				<h2 class="hb">Professor</h2>
 				<p>Founder and Head Instructor:  
 				black belt, Professor Artem Sidorov</p>
@@ -73,9 +72,9 @@
 				<a href="https://www.instagram.com/sidorov_ai/" target="blank"><i class="fab fa-instagram"></i>sidorov_ai</a>
 			</div>
 		</section>
-		<section class="hb-second-three administration">
-			<img src="img/others-img/m-anna.jpg" alt="Anna Hayduchenko">
-			<div>
+		<section class="hb-section hb-second-three administration">
+			<img class="hb-img" src="img/others-img/m-anna.jpg" alt="Anna Hayduchenko">
+			<div class="hb-info">
 				<h2 class="hb">Administration</h2>
 				<p>Anna Hayduchenko - black belt</p>
 				<p>2019 Gi IBJJF European champion (brown belts)</p>
@@ -89,14 +88,70 @@
 
 <article class="scedule">
 	<h2><a name="schedule">Schedule</a></h2>
-	<section class="schedule-section">
 
-		<picture class="schedule-pic">
-			<source srcset="img/others-img/schedule.webp" type="image/webp">
-	   		<img class="schedule-img" src="img/others-img/schedule.jpg"/>
-		</picture>
+	<div class="block-sch">
 
-		<form id="form" action="#" method="post" autocomplete="off" enctype="text/plane">
+		<section class="schedule-section">
+			<i class="far fa-clock"></i>
+			<h3 class="h-sch">Advanced</h3>
+			<p class="day-sch"><mark>Tue Thu</mark></p>
+			<p class="time-sch"> <time>19:30 - 21:00</time></p>
+			<p class="format-sch">Gi</p>
+			<h3 class="h-sch">All levels</h3>
+			<p class="day-sch"><mark>Sat</mark></p>
+			<p class="time-sch"><time>11:00 - 12:30</time></p>
+			<p class="format-sch">No-Gi</p>
+		</section>
+
+		<section class="schedule-section  schedule-section-white">
+			<i class="far fa-clock"></i>
+			<h3 class="h-sch">Basics-1</h3>
+			<p class="day-sch"><mark>Mon Wed</mark></p>
+			<p class="time-sch"><time>7:00 - 8-30</time></p>
+			<p class="format-sch">Gi</p>
+			<p class="day-sch"><mark>Fri</mark></p>
+			<p class="time-sch"><time>7:00 - 8:30</time></p>
+			<p class="format-sch">No-Gi</p>
+		</section>
+
+		<section class="schedule-section">
+			<i class="far fa-clock"></i>
+			<h3 class="h-sch">Basics-2</h3>
+			<p class="day-sch"><mark>Tue Thu</mark></p>
+			<p class="time-sch"><time>18:30 - 20:00</time></p>
+			<p class="format-sch">Gi</p>
+			<h3 class="h-sch">All levels</h3>
+			<p class="day-sch"><mark>Sat</mark></p>
+			<p class="time-sch"><time>11:00 - 12:30</time></p>
+			<p class="format-sch">No-Gi</p>
+			</section>
+
+
+		<section class="schedule-section  schedule-section-white">
+			<i class="far fa-clock"></i>
+			<h3 class="h-sch">Basics-3</h3>
+			<p class="day-sch"><mark>Tue Thu</mark></p>
+			<p class="time-sch"><time>20:30 - 22:00</time></p>
+			<p class="format-sch">Gi</p>
+			<p class="day-sch"><mark>Sat</mark></p>
+			<p class="time-sch"><time>13:00 - 14:30</time></p>
+			<p class="format-sch">No-Gi</p>
+		</section>
+
+		<section class="schedule-section">
+			<i class="far fa-clock"></i>
+			<h3 class="h-sch">Kids</h3>
+			<p class="day-sch"><mark>Tue Thu</mark></p>
+			<p class="time-sch"><time>17:30 - 19:00</time></p>
+			<p class="format-sch">Gi</p>
+			<p class="day-sch"><mark>Sat</mark></p>
+			<p class="time-sch"><time>9:00 - 10:30</time></p>
+			<p class="format-sch">No-Gi</p>
+		</section>
+	</div>
+</article>
+		
+		<!-- <form id="form" action="#" method="post" autocomplete="off" enctype="text/plane">
 			<span id="connect-form">Sign up for a free lesson!</span> <br>
 			<label> Name Surname <br>
 			<input class="user" type="text" required placeholder="Name Surname" maxlength="100" /></label> <br>
@@ -105,30 +160,32 @@
 			<label>Telephone (Ukraine) <br>
 			<input class="user" type="tel" required placeholder="+38-0XX-XXX-XX-XX" pattern="[\+]\d{2}[\-]\d{3}[\-]\d{3}[\-]\d{2}[\-]\d{2}" title="enter in the specified format" /></label> <br>
 			<input id="submit" type="submit" value="Sing up"/>
-		</form>
+		</form> -->
 
-	</section>
 
-</article>
-
-<footer>
+<article class="article-contacts">
 	<h2><a id="contact" name="contact">Contacts</a></h2>
 	<section id="contacts">
-		<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.2509524408506!2d30.531949990756864!3d50.45144074017285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa54c6af06b%3A0xd89dc64da4374cd1!2sIntelligent%20Jiu-Jitsu%20Academy!5e0!3m2!1sen!2sua!4v1578318899731!5m2!1sen!2sua" width="450" height="420" frameborder="0" style="border:2px outset black;" allowfullscreen=""></iframe>
 		<div id="text-contacts">
 		<strong>
 		<ul id="icon-list-contact">
-			<li><address><i class="fas fa-map-marker-alt"></i>
-			Mykhaila Hrushevskoho St, 3A 
+			<i class="fas fa-map-marker-alt"></i><li><address>
+			Mykhaila Hrushevskoho 3A 
 			</address></li>
-			<li>@intelligent.bjj</li>
-			<li>facebook.com/intelligent.bjj</li>
-			<li>intelligent.bjj@gmail.com</li>
-			<li>+38-096-599-00-01</li>
+			<i class="fas fa-mobile-alt"></i><li>+38-096-599-00-01</li>
+			<i class="fab fa-facebook-f"></i><li>facebook.com/intelligent.bjj</li>
+			<i class="fab fa-instagram"></i><li>@intelligent.bjj</li>
+			<i class="far fa-envelope"></i><li>intelligent.bjj@gmail.com</li>
+			<i class="fas fa-users-cog"></i><li><a>Get a lesson free !!!</a></li>
+			
 			</strong>
 		</ul>
 		</div>
+		<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.2509524408506!2d30.531949990756864!3d50.45144074017285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa54c6af06b%3A0xd89dc64da4374cd1!2sIntelligent%20Jiu-Jitsu%20Academy!5e0!3m2!1sen!2sua!4v1578318899731!5m2!1sen!2sua" width="450" height="370" frameborder="0" style="border:2px outset black; border-radius: 0.5em" allowfullscreen=""></iframe>
 	</section>
+</article>
+
+<footer>
 		<section id="menu-icon">
 		<ul class="icon-contact">
 			<li class="icon"><a href="https://instagram.com/intelligent.bjj?igshid=tkjde4sx96id" target="blank"><i class="fab fa-instagram"></i></a></li>
@@ -136,6 +193,7 @@
 			<li class="icon"><a href="https://t.me/ArtemINTELLIGENT" target="blank"><i class="fab fa-telegram-plane"></i></a></li>
 			<li class="icon"><a href="tel:+380965990001"><i class="fas fa-mobile-alt"></i></a></li>
 		</ul>	
+		<i class="fas fa-arrow-alt-circle-up up"></i>
 	</section>
 </footer>
 

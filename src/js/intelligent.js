@@ -9,8 +9,12 @@ const liBreadOne = document.querySelector('.bread-li-one');
 const liBreadTwo = document.querySelector('.bread-li-two');
 const liBreadThree = document.querySelector('.bread-li-three');
 
+liBreadOne.addEventListener('click', () => {ChooseBreadOne ()});
+liBreadTwo.addEventListener('click', () => {ChooseBreadTwo ()});
+liBreadThree.addEventListener('click', () => {ChooseBreadThree ()});
 
-liBreadOne.onclick = function ChooseBreadOne () {
+
+function ChooseBreadOne () {
 	liBreadOne.classList.add('bread-active');
 	document.querySelector('.hb-second-one').style.display = 'flex';
 		if (liBreadOne.classList.contains('bread-active')) {
@@ -20,7 +24,7 @@ liBreadOne.onclick = function ChooseBreadOne () {
 			document.querySelector('.hb-second-three').style.display = 'none';
 		} 	
 }
-liBreadTwo.onclick = function ChooseBreadTwo () {
+function ChooseBreadTwo () {
 	liBreadTwo.classList.add('bread-active');
 	document.querySelector('.hb-second-two').style.display = 'flex';
 		if (liBreadTwo.classList.contains('bread-active')) {
@@ -30,7 +34,7 @@ liBreadTwo.onclick = function ChooseBreadTwo () {
 			document.querySelector('.hb-second-three').style.display = 'none';
 		} 
 }
-liBreadThree.onclick = function ChooseBreadThree () {
+function ChooseBreadThree () {
 	liBreadThree.classList.add('bread-active');
 	document.querySelector('.hb-second-three').style.display = 'flex';
 		if (liBreadThree.classList.contains('bread-active')) {
@@ -40,3 +44,9 @@ liBreadThree.onclick = function ChooseBreadThree () {
 			document.querySelector('.hb-second-two').style.display = 'none';
 		} 
 }
+
+// up 
+
+/*document.querySelector('.up').addEventListener('click', () => {
+	document.querySelector('header').
+})*/
