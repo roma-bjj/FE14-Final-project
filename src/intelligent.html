@@ -4,16 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>INTELLIGENT JJ ACADEMY</title>
-	<link rel="shortcut icon" type="image/x-icon" href="img/main-img/main-logo.png">
-	<link rel="stylesheet" type="text/css" href="css/intelligent.css">
-	<link rel="stylesheet" type="text/css" href="css/int-media.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/main-img/main-logo.png"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
 <header>
-	
+
 	<div class="menu-burger-wrapper">
 		<div class="menu-burger menu-burger-active"></div>
 	</div>
@@ -23,7 +21,7 @@
 			<li class="main-list"><a href="">Home</a></li>
 			<li class="main-list"><a href="">About</a>
 				<ul class="second-level first">
-					<li><a href="">History</a></li>
+					<li><a id="a-history" href="">History</a></li>
 					<li><a href="">Athletes</a></li>
 				</ul>
 			</li>
@@ -42,8 +40,29 @@
 	<img id="main-logo" src="img/main-img/main-logo.png" alt="main-logo">
 </header>
 
-<article id="head-block">
+<div id="all-container">
 
+<i id="i-admin" class="fas fa-user-shield"></i>
+
+<div class="adminform">
+	<div class="adminform-content">
+		<div class="adminform-close">&times;</div>
+		<form id="form-admin" action="#" method="post" autocomplete="off" enctype="text/plane">
+			<span id="autorization">Autorization</span> <br>
+			<div class="div-admin">
+			<label class="lab-admin" for="em">e-mail</label>
+			<input class="admin-field admin-field-email" type="email" required placeholder="" maxlength="20" name="em"/>
+			</div>
+			<div class="div-admin">
+			<label class="lab-admin">password</label>
+			<input class="admin-field admin-field-password" type="password" required placeholder="" maxlength="16" />
+			</div>
+			<input id="send-autorize" type="submit" value="Go"/>
+		</form>
+	</div>
+</div>
+
+<article id="head-block">
 	<h1>Respect everyone Fear no one</h1>
 	<nav class="bread-nav">
 		<ul class="bread-ul">
@@ -92,76 +111,83 @@
 	<div class="block-sch">
 
 		<section class="schedule-section">
-			<i class="far fa-clock"></i>
 			<h3 class="h-sch">Advanced</h3>
-			<p class="day-sch"><mark>Tue Thu</mark></p>
-			<p class="time-sch"> <time>19:30 - 21:00</time></p>
-			<p class="format-sch">Gi</p>
+			<p class="day-sch"><i class="far fa-calendar-check"></i>Tue Thu</p>
+			<p class="time-sch"><i class="far fa-clock"></i><time>19:30 - 21:00</time></p>
+			<p class="format-sch"><i class="fas fa-tshirt"></i>Gi</p>
 			<h3 class="h-sch">All levels</h3>
-			<p class="day-sch"><mark>Sat</mark></p>
-			<p class="time-sch"><time>11:00 - 12:30</time></p>
-			<p class="format-sch">No-Gi</p>
+			<p class="day-sch"><i class="far fa-calendar-check"></i>Sat</p>
+			<p class="time-sch"><i class="far fa-clock"></i><time>11:00 - 12:30</time></p>
+			<p class="format-sch"><i class="fas fa-tshirt"></i>No-Gi</p>
 		</section>
 
 		<section class="schedule-section  schedule-section-white">
-			<i class="far fa-clock"></i>
 			<h3 class="h-sch">Basics-1</h3>
-			<p class="day-sch"><mark>Mon Wed</mark></p>
-			<p class="time-sch"><time>7:00 - 8-30</time></p>
-			<p class="format-sch">Gi</p>
-			<p class="day-sch"><mark>Fri</mark></p>
-			<p class="time-sch"><time>7:00 - 8:30</time></p>
-			<p class="format-sch">No-Gi</p>
+			<p class="day-sch"><i class="far fa-calendar-check"></i>Mon Wed</p>
+			<p class="time-sch"><i class="far fa-clock"></i><time>7:00 - 8-30</time></p>
+			<p class="format-sch"><i class="fas fa-tshirt"></i>Gi</p>
+			<p class="day-sch"><i class="far fa-calendar-check"></i>Fri</p>
+			<p class="time-sch"><i class="far fa-clock"></i><time>7:00 - 8:30</time></p>
+			<p class="format-sch"><i class="fas fa-tshirt"></i>No-Gi</p>
 		</section>
 
 		<section class="schedule-section">
-			<i class="far fa-clock"></i>
 			<h3 class="h-sch">Basics-2</h3>
-			<p class="day-sch"><mark>Tue Thu</mark></p>
-			<p class="time-sch"><time>18:30 - 20:00</time></p>
-			<p class="format-sch">Gi</p>
+			<p class="day-sch"><i class="far fa-calendar-check"></i>Tue Thu</p>
+			<p class="time-sch"><i class="far fa-clock"></i><time>18:30 - 20:00</time></p>
+			<p class="format-sch"><i class="fas fa-tshirt"></i>Gi</p>
 			<h3 class="h-sch">All levels</h3>
-			<p class="day-sch"><mark>Sat</mark></p>
-			<p class="time-sch"><time>11:00 - 12:30</time></p>
-			<p class="format-sch">No-Gi</p>
+			<p class="day-sch"><i class="far fa-calendar-check"></i>Sat</p>
+			<p class="time-sch"><i class="far fa-clock"></i><time>11:00 - 12:30</time></p>
+			<p class="format-sch"><i class="fas fa-tshirt"></i>No-Gi</p>
 			</section>
 
 
 		<section class="schedule-section  schedule-section-white">
-			<i class="far fa-clock"></i>
 			<h3 class="h-sch">Basics-3</h3>
-			<p class="day-sch"><mark>Tue Thu</mark></p>
-			<p class="time-sch"><time>20:30 - 22:00</time></p>
-			<p class="format-sch">Gi</p>
-			<p class="day-sch"><mark>Sat</mark></p>
-			<p class="time-sch"><time>13:00 - 14:30</time></p>
-			<p class="format-sch">No-Gi</p>
+			<p class="day-sch"><i class="far fa-calendar-check"></i>Tue Thu</p>
+			<p class="time-sch"><i class="far fa-clock"></i><time>20:30 - 22:00</time></p>
+			<p class="format-sch"><i class="fas fa-tshirt"></i>Gi</p>
+			<p class="day-sch"><i class="far fa-calendar-check"></i>Sat</p>
+			<p class="time-sch"><i class="far fa-clock"></i><time>13:00 - 14:30</time></p>
+			<p class="format-sch"><i class="fas fa-tshirt"></i>No-Gi</p>
 		</section>
 
 		<section class="schedule-section">
-			<i class="far fa-clock"></i>
 			<h3 class="h-sch">Kids</h3>
-			<p class="day-sch"><mark>Tue Thu</mark></p>
-			<p class="time-sch"><time>17:30 - 19:00</time></p>
-			<p class="format-sch">Gi</p>
-			<p class="day-sch"><mark>Sat</mark></p>
-			<p class="time-sch"><time>9:00 - 10:30</time></p>
-			<p class="format-sch">No-Gi</p>
+			<p class="day-sch"><i class="far fa-calendar-check"></i>Tue Thu</p>
+			<p class="time-sch"><i class="far fa-clock"></i><time>17:30 - 19:00</time></p>
+			<p class="format-sch"><i class="fas fa-tshirt"></i>Gi</p>
+			<p class="day-sch"><i class="far fa-calendar-check"></i>Sat</p>
+			<p class="time-sch"><i class="far fa-clock"></i><time>9:00 - 10:30</time></p>
+			<p class="format-sch"><i class="fas fa-tshirt"></i>No-Gi</p>
 		</section>
 	</div>
 </article>
-		
-		<!-- <form id="form" action="#" method="post" autocomplete="off" enctype="text/plane">
-			<span id="connect-form">Sign up for a free lesson!</span> <br>
+
+<a id="get-free-button" href="">
+	<span class="free-button"></span>
+	<span class="free-button"></span>
+	<span class="free-button"></span>
+	<span class="free-button"></span>
+	Get a lesson free
+</a>
+
+<div class="boxform">
+	<div class="boxform-content">
+		<div class="boxform-close">&times;</div>
+		<form id="form-free" action="#" method="post" autocomplete="off" enctype="text/plane">
+			<span id="free-lesson">FREE LESSON</span> <br>
 			<label> Name Surname <br>
 			<input class="user" type="text" required placeholder="Name Surname" maxlength="100" /></label> <br>
 			<label> Instagram / Facebook / Telegram <br>
 			<input class="user" type="text" required placeholder="@Instagram" maxlength="150" /></label> <br>
 			<label>Telephone (Ukraine) <br>
-			<input class="user" type="tel" required placeholder="+38-0XX-XXX-XX-XX" pattern="[\+]\d{2}[\-]\d{3}[\-]\d{3}[\-]\d{2}[\-]\d{2}" title="enter in the specified format" /></label> <br>
-			<input id="submit" type="submit" value="Sing up"/>
-		</form> -->
-
+			<input class="user" type="tel" placeholder="+38-0XX-XXX-XX-XX" pattern="[\+]\d{2}[\-]\d{3}[\-]\d{3}[\-]\d{2}[\-]\d{2}" title="enter in the specified format" /></label> <br>
+			<input id="submit" type="submit" value="sing up"/>
+		</form>
+	</div>
+</div>
 
 <article class="article-contacts">
 	<h2><a id="contact" name="contact">Contacts</a></h2>
@@ -176,14 +202,21 @@
 			<i class="fab fa-facebook-f"></i><li>facebook.com/intelligent.bjj</li>
 			<i class="fab fa-instagram"></i><li>@intelligent.bjj</li>
 			<i class="far fa-envelope"></i><li>intelligent.bjj@gmail.com</li>
-			<i class="fas fa-users-cog"></i><li><a>Get a lesson free !!!</a></li>
-			
 			</strong>
 		</ul>
 		</div>
 		<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.2509524408506!2d30.531949990756864!3d50.45144074017285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa54c6af06b%3A0xd89dc64da4374cd1!2sIntelligent%20Jiu-Jitsu%20Academy!5e0!3m2!1sen!2sua!4v1578318899731!5m2!1sen!2sua" width="450" height="370" frameborder="0" style="border:2px outset black; border-radius: 0.5em" allowfullscreen=""></iframe>
 	</section>
 </article>
+
+<form action="" id="write-news">
+	<input class="w-news" type="text">
+	<input class="sub-news" type="submit" disabled>
+</form>
+
+<div id="list"></div>
+
+</div>
 
 <footer>
 		<section id="menu-icon">
@@ -196,7 +229,7 @@
 		<i class="fas fa-arrow-alt-circle-up up"></i>
 	</section>
 </footer>
-
+<script type="module" src="./js/index.js"></script>
 <script type="text/javascript" src="js/intelligent.js"></script>
 </body>
 </html>

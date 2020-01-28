@@ -1,17 +1,11 @@
-// Burger
-document.querySelector('.menu-burger-wrapper').onclick = function() {
-	document.querySelector('.menu-burger').classList.toggle('menu-burger-active');
-	document.querySelector('.main-menu').classList.toggle('mobile-nav-active');
-}
-
-// Pagination 
+// Pagination Athletes
 
 const athlet = document.querySelector('.athlet').children;
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const maxItem = 3;
 let index = 1;
-const allPages = Math.floor(athlet.length/maxItem);
+const allPages = Math.ceil(athlet.length/maxItem);
 
 prev.addEventListener ("click", function() {
 	index--

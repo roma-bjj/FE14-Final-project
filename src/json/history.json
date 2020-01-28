@@ -1,0 +1,702 @@
+﻿{
+  "h2": [
+    {
+      "@id": "h-history",
+      "a": {
+        "@name": "history",
+        "#text": "History"
+      }
+    },
+    {
+      "@id": "h-history",
+      "a": {
+        "@name": "history",
+        "#text": "History"
+      }
+    }
+  ],
+  "article": [
+    {
+      "@id": "history",
+      "img": {
+        "@src": "img/others-img/team.jpg",
+        "@alt": "Intelligent Team"
+      },
+      "section": {
+        "@id": "info-history",
+        "p": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat asperiores natus eos, labore quas tenetur cumque impedit quidem molestiae beatae quia atque, architecto perferendis at repellendus ullam. Labore, consectetur, saepe.",
+          "Quaerat, rem amet eos impedit nisi, totam natus odit, animi mollitia perferendis rerum quis placeat quod architecto neque repellendus maxime reiciendis enim facere nihil. Voluptatem architecto dolorem voluptate illo tempore!",
+          "Voluptate harum vel quisquam atque dolore, obcaecati, doloribus sapiente autem qui deleniti quae dolorum eveniet architecto consequatur numquam tempora consequuntur aperiam aliquam. Error voluptas, explicabo odio dignissimos quod animi nam.",
+          "Esse tempore officiis dolor recusandae quod magnam mollitia distinctio eius quaerat vitae reprehenderit maiores amet cupiditate, repudiandae ab quam saepe rem commodi enim quae quos magni, molestias obcaecati? Sapiente, doloribus.",
+          "Atque, facilis harum quam totam sapiente tempora cum eveniet quidem, eaque aliquam illum voluptate delectus. Voluptatem architecto perferendis tempora facere, assumenda, amet nesciunt modi officiis, nihil hic nemo adipisci culpa!"
+        ]
+      }
+    },
+    {
+      "@id": "athletes",
+      "h2": {
+        "a": {
+          "@href": "",
+          "#text": "Athletes"
+        }
+      },
+      "section": {
+        "@class": "athlet",
+        "div": [
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/misha.jpg",
+              "@alt": "Mykhailo Artsimovych",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Mykhailo Artsimovych",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Brown belt",
+                  "Multiple time Absolute champion of Ukraine Gi and No Gi",
+                  "Purple belt division:",
+                  "Bronze medal, master 1, Masters European Championship 2017",
+                  "Gold medal,master 2,European Championship 2018",
+                  "Silver medal and silver in open weight,master 2, Masters European Championship 2018",
+                  "Brown belt division:",
+                  "Silver medal,master 2 ,Masters European Championship 2019",
+                  "Silver medal and bronze in open weight,master 2,NoGi European Championship 2019",
+                  "Powerlifting:",
+                  "Multiple adult champion of Ukraine",
+                  "Champion  of Junior's World and Europe",
+                  "Champion of Students World Cup"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/boris.jpg",
+              "@alt": "Borys Borysenko",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Borys Borysenko",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Purple belt",
+                  "European No Gi champion",
+                  "Paris Open Gi and No Gi champion and No GI absolute champion",
+                  "Spanish Open No Gi champion",
+                  "Germany Open Gi and No Gi champion",
+                  "Germany Open Naga champion",
+                  "Hungary Open weight and absolute champion",
+                  "Multiple times Ukrainian champion"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/sonya.jpg",
+              "@alt": "Sophia Yaremych",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Sophia Yaremych",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Purple belt",
+                  "EUROPEAN JIU JITSU IBJJF CHAMPIONSHIP 2019 - 3st place",
+                  "EUROPEAN JIU JITSU IBJJF CHAMPIONSHIP No Gi 2019 - 3st place",
+                  "Moscow. Adu Dhabi Grand Slam-  3rd place",
+                  "Ukrainian International Open  GI UBJJF Jiu-Jitsu Championship  - 2st place",
+                  "Moscow Intrnational  Open NO-GI IBJJF Jiu-Jitsu Championship - 1st place",
+                  "Moscow Intrnational  Open GI IBJJF Jiu-Jitsu Championship - 3st place",
+                  "Copenhagen International Open GI IBJJF Jiu-Jitsu Championship - 1st place",
+                  "Copenhagen International Open NO-GI IBJJF Jiu-Jitsu Championship - 1st place"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/ruslan.jpg",
+              "@alt": "Ruslan Bachkov",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Ruslan Bachkov",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Purple belt",
+                  "Multiple Ukrainian Gi & NoGi champion",
+                  "UWW Ukraine champion",
+                  "NAGA German silver medalist",
+                  "Spain national AJP silver medalist",
+                  "Berlin nogi Open ibjjf champion"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/tim.jpg",
+              "@alt": "Tim Maloshtan",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Tim Maloshtan",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Purple belt",
+                  "IBJJF Moscow Open 2014 Heavy Weight Champion",
+                  "Hungarian Open 2015 Heavy Weight Champion",
+                  "UBJJF Ukrainian Open Heavy Weight Champion"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/serhiy.jpg",
+              "@alt": "Serhiy Samsonov",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Serhiy Samsonov",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Purple belt",
+                  "UBJJF Kiev No Gi Open champion",
+                  "UBJJF Ukraine Open runner-up",
+                  "IBJJF Copenhagen International Open No Gi champion",
+                  "IBJJF Copenhagen International Open Gi 3rd place",
+                  "IBJJF Copenhagen International Open Gi absolute 3rd place"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/herman.jpg",
+              "@alt": "Herman Horodetskyi",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Herman Horodetskyi",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Blue belt",
+                  "UWW  Grappling European bronze medalist  \r\nNo Gi ( Serbia, Novi Sad2017)",
+                  "IBJJF European No Gi silver medalist ( Italian, Rome 2018)",
+                  "UWW World Grappling championship bronze medalist, Gi and No Gi ( Kazakhstan, Astana 2018)",
+                  "UWW Grappling European bronze medalist, Gi ( Romania Bucharest 2019)",
+                  "Champion IBJJF European No Gi  (Rome, Italian 2019)"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/taya.jpg",
+              "@alt": "Taisiia Svintsitska",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Taisiia Svintsitska",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Blue belt",
+                  "European IBJJF  Jiu-Jitsu NO GI Championship - 3 place",
+                  "Ukrainian International Open  GI UBJJF Jiu-Jitsu Championship - 1st place",
+                  "Spanish National  NO-GI IBJJF Jiu-Jitsu Championship - 1st place",
+                  "Paris Spring International Open GI IBJJF Jiu-Jitsu Championship - 1st place",
+                  "Ukrainian cup UWW grappling GI 2 place/NO GI 2 place",
+                  "Ukrainian open ADCC (non professional) - 1 place"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/yehor.jpg",
+              "@alt": "Yehor Yurchenko",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Yehor Yurchenko",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Blue belt",
+                  "Abu Dhabi World Jiu Jitsu Festival 2019 2nd place",
+                  "Ukrainian champion",
+                  "Multiple time Kyiv champion"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "div": {
+        "@class": "pagination",
+        "div": [
+          {
+            "@class": "prev",
+            "b": "left"
+          },
+          {
+            "@class": "next",
+            "b": "right"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "history",
+      "img": {
+        "@src": "img/others-img/team.jpg",
+        "@alt": "Intelligent Team"
+      },
+      "section": {
+        "@id": "info-history",
+        "p": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat asperiores natus eos, labore quas tenetur cumque impedit quidem molestiae beatae quia atque, architecto perferendis at repellendus ullam. Labore, consectetur, saepe.",
+          "Quaerat, rem amet eos impedit nisi, totam natus odit, animi mollitia perferendis rerum quis placeat quod architecto neque repellendus maxime reiciendis enim facere nihil. Voluptatem architecto dolorem voluptate illo tempore!",
+          "Voluptate harum vel quisquam atque dolore, obcaecati, doloribus sapiente autem qui deleniti quae dolorum eveniet architecto consequatur numquam tempora consequuntur aperiam aliquam. Error voluptas, explicabo odio dignissimos quod animi nam.",
+          "Esse tempore officiis dolor recusandae quod magnam mollitia distinctio eius quaerat vitae reprehenderit maiores amet cupiditate, repudiandae ab quam saepe rem commodi enim quae quos magni, molestias obcaecati? Sapiente, doloribus.",
+          "Atque, facilis harum quam totam sapiente tempora cum eveniet quidem, eaque aliquam illum voluptate delectus. Voluptatem architecto perferendis tempora facere, assumenda, amet nesciunt modi officiis, nihil hic nemo adipisci culpa!"
+        ]
+      }
+    },
+    {
+      "@id": "athletes",
+      "h2": {
+        "a": {
+          "@href": "",
+          "#text": "Athletes"
+        }
+      },
+      "section": {
+        "@class": "athlet",
+        "div": [
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/misha.jpg",
+              "@alt": "Mykhailo Artsimovych",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Mykhailo Artsimovych",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Brown belt",
+                  "Multiple time Absolute champion of Ukraine Gi and No Gi",
+                  "Purple belt division:",
+                  "Bronze medal, master 1, Masters European Championship 2017",
+                  "Gold medal,master 2,European Championship 2018",
+                  "Silver medal and silver in open weight,master 2, Masters European Championship 2018",
+                  "Brown belt division:",
+                  "Silver medal,master 2 ,Masters European Championship 2019",
+                  "Silver medal and bronze in open weight,master 2,NoGi European Championship 2019",
+                  "Powerlifting:",
+                  "Multiple adult champion of Ukraine",
+                  "Champion  of Junior's World and Europe",
+                  "Champion of Students World Cup"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/boris.jpg",
+              "@alt": "Borys Borysenko",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Borys Borysenko",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Purple belt",
+                  "European No Gi champion",
+                  "Paris Open Gi and No Gi champion and No GI absolute champion",
+                  "Spanish Open No Gi champion",
+                  "Germany Open Gi and No Gi champion",
+                  "Germany Open Naga champion",
+                  "Hungary Open weight and absolute champion",
+                  "Multiple times Ukrainian champion"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/sonya.jpg",
+              "@alt": "Sophia Yaremych",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Sophia Yaremych",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Purple belt",
+                  "EUROPEAN JIU JITSU IBJJF CHAMPIONSHIP 2019 - 3st place",
+                  "EUROPEAN JIU JITSU IBJJF CHAMPIONSHIP No Gi 2019 - 3st place",
+                  "Moscow. Adu Dhabi Grand Slam-  3rd place",
+                  "Ukrainian International Open  GI UBJJF Jiu-Jitsu Championship  - 2st place",
+                  "Moscow Intrnational  Open NO-GI IBJJF Jiu-Jitsu Championship - 1st place",
+                  "Moscow Intrnational  Open GI IBJJF Jiu-Jitsu Championship - 3st place",
+                  "Copenhagen International Open GI IBJJF Jiu-Jitsu Championship - 1st place",
+                  "Copenhagen International Open NO-GI IBJJF Jiu-Jitsu Championship - 1st place"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/ruslan.jpg",
+              "@alt": "Ruslan Bachkov",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Ruslan Bachkov",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Purple belt",
+                  "Multiple Ukrainian Gi & NoGi champion",
+                  "UWW Ukraine champion",
+                  "NAGA German silver medalist",
+                  "Spain national AJP silver medalist",
+                  "Berlin nogi Open ibjjf champion"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/tim.jpg",
+              "@alt": "Tim Maloshtan",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Tim Maloshtan",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Purple belt",
+                  "IBJJF Moscow Open 2014 Heavy Weight Champion",
+                  "Hungarian Open 2015 Heavy Weight Champion",
+                  "UBJJF Ukrainian Open Heavy Weight Champion"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/serhiy.jpg",
+              "@alt": "Serhiy Samsonov",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Serhiy Samsonov",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Purple belt",
+                  "UBJJF Kiev No Gi Open champion",
+                  "UBJJF Ukraine Open runner-up",
+                  "IBJJF Copenhagen International Open No Gi champion",
+                  "IBJJF Copenhagen International Open Gi 3rd place",
+                  "IBJJF Copenhagen International Open Gi absolute 3rd place"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/herman.jpg",
+              "@alt": "Herman Horodetskyi",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Herman Horodetskyi",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Blue belt",
+                  "UWW  Grappling European bronze medalist  \r\nNo Gi ( Serbia, Novi Sad2017)",
+                  "IBJJF European No Gi silver medalist ( Italian, Rome 2018)",
+                  "UWW World Grappling championship bronze medalist, Gi and No Gi ( Kazakhstan, Astana 2018)",
+                  "UWW Grappling European bronze medalist, Gi ( Romania Bucharest 2019)",
+                  "Champion IBJJF European No Gi  (Rome, Italian 2019)"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/taya.jpg",
+              "@alt": "Taisiia Svintsitska",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Taisiia Svintsitska",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Blue belt",
+                  "European IBJJF  Jiu-Jitsu NO GI Championship - 3 place",
+                  "Ukrainian International Open  GI UBJJF Jiu-Jitsu Championship - 1st place",
+                  "Spanish National  NO-GI IBJJF Jiu-Jitsu Championship - 1st place",
+                  "Paris Spring International Open GI IBJJF Jiu-Jitsu Championship - 1st place",
+                  "Ukrainian cup UWW grappling GI 2 place/NO GI 2 place",
+                  "Ukrainian open ADCC (non professional) - 1 place"
+                ]
+              }
+            }
+          },
+          {
+            "@class": "athlet-div",
+            "img": {
+              "@src": "img/others-img/athlet/yehor.jpg",
+              "@alt": "Yehor Yurchenko",
+              "@class": "athlet-img"
+            },
+            "div": {
+              "@class": "athlet-info",
+              "h3": "Yehor Yurchenko",
+              "span": {
+                "@class": "athlet-span",
+                "br": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "#text": [
+                  "Blue belt",
+                  "Abu Dhabi World Jiu Jitsu Festival 2019 2nd place",
+                  "Ukrainian champion",
+                  "Multiple time Kyiv champion"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "div": {
+        "@class": "pagination",
+        "div": [
+          {
+            "@class": "prev",
+            "b": "left"
+          },
+          {
+            "@class": "next",
+            "b": "right"
+          }
+        ]
+      }
+    }
+  ]
+}

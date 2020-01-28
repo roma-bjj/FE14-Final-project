@@ -45,24 +45,21 @@ const cssLoaders = extra => {
 }
 
 module.exports = {
-	context: path.resolve(__dirname, 'src'),
 	mode: 'development',
-	entry: {
-		main: ['@babel/polyfill','./index.js']
-	},
+    context: path.resolve(__dirname, 'src'),
+    entry: ['@babel/polyfill', './js/index.js'],
 	output: {
     	filename: filename('js'),
     	path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
-    	extensions: ['.js', '.json', '.css', '.jpg'],
-    	alias: {
-    		'@css': path.resolve(__dirname, 'src/css/'),
-    		'@js': path.resolve(__dirname, 'src/js/'),
-    		'@img': path.resolve(__dirname, 'src/img/'),
-    	}
+        modules: ['./node_modules']
     },
     optimization: optimization(),
+    devServer: {
+    contentBase: 'index.html',
+    port: 9000,
+  },
     plugins: [
     new HTMLWebpackPlugin({
     	template: './intelligent.html',
@@ -95,6 +92,7 @@ module.exports = {
     		test:/\.(jpg|svg|png|gif|webp)$/,
     		use: ['file-loader']
     	},
+
     	{ 	
     		test: /\.js$/, 
     		exclude: /node_modules/, 
@@ -102,10 +100,14 @@ module.exports = {
     			loader:'babel-loader',
     			options: {
     				presets: [
-    					'@babel/preset-env'
-    				],
+    					'@babel/preset-env',
+                    ],
     				plugins: [
-    					'@babel/plugin-proposal-class-properties'
+                        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+                        ["transform-class-properties", { "spec": true }],
+                        [ '@babel/plugin-transform-arrow-functions', { 'spec': false } ],
+                        '@babel/plugin-proposal-export-default-from',
+                        [ '@babel/plugin-transform-runtime', { 'regenerator': false } ],
     				]
     			} 
     		}

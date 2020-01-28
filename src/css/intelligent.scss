@@ -8,6 +8,8 @@ $bgYellow: linear-gradient(to right, #F9D423, #e65c00);
 
 $vividRed: #EC0800;
 
+$darkRed: #991A1A;
+
 	// ----------mixins----------
 
 @mixin dark-block {
@@ -63,6 +65,11 @@ $vividRed: #EC0800;
 	}
 }
 
+@keyframes bgModal {
+	0% {transform: translateX(-100%);}
+	100% {transform: translateX(0%);}
+}
+
 	// ----------------------------------
 
 ::-webkit-scrollbar {
@@ -80,7 +87,11 @@ $vividRed: #EC0800;
   border-radius: 0.3em;
 }
 
-	// --------CSS HEADER FOOTER---------
+	// --------------------------------
+
+*:focus {
+	outline: none;
+}
 
 body {
 	margin: 0;
@@ -90,6 +101,8 @@ body {
 	font-family: "Arial";
 }
 
+	// --------CSS HEADER FOOTER---------
+
 /* ---All Styles for <HEADER>--- */
 
 header {
@@ -97,7 +110,7 @@ header {
 	background: -webkit-linear-gradient(to right, #434343, #000000);
 	background: linear-gradient(to right, #434343, #000000);
 	width: 100%;
-	margin-bottom: 3%;
+	margin-bottom: 1%;
 }
 
 /* Styles for #MAIN-MENU */
@@ -404,6 +417,119 @@ ul.icon-contact li.icon:nth-child(4):after {
 
 	// -----------SCSS-------------------
 
+i#i-admin {
+	margin-left: 1%;
+	font-size: 1.5em;
+	color: #E1E1E1;
+	opacity: 0.05;
+}
+
+i#i-admin:hover {
+	opacity: 1.0;
+}
+
+.adminform {
+	position: fixed;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.6);
+	transform: translateX(-100%);
+	animation: bgModal .5s ease forwards;
+}
+
+.adminform-content {
+	position: relative;
+	width: 40%;
+	height: 40%;
+	margin: 0;
+	transform: scale(0);
+	animation: lightImage 1s ease forwards;
+	animation-delay: 1s;
+}
+
+.adminform-close {
+	position: absolute;
+	top: 0;
+	right: -8%;
+	font-size: 2em;
+	color: #E1E1E1;
+	cursor: zoom-out;
+	z-index: 101;
+}
+
+.adminform-close:hover {
+	color: yellow;
+}
+
+#form-admin {
+			@include dark-block;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 100%;
+			padding: 8% 5% 8%;
+			font-family: 'Arial';
+			font-size: 1.2em;
+			font-weight: 600;
+			text-align: center;
+			color: yellow;
+			border-radius: .5em;
+			
+				#autorization {
+				display: block;
+				margin-top: 1%;
+				font-size: 1.5em;
+				font-weight: 800;
+				text-align: center;
+				color: $vividRed;
+				}
+
+				#send-autorize {
+				align-self: center;
+				padding: 1%;
+				background: transparent;
+				width: 10%; 
+				border: none;
+				border-bottom: .1em outset yellow;
+				font-size: 1.2em; 
+				color: #E1E1E1;
+				}
+}
+
+#form-admin .admin-field{
+				background: transparent;
+				width: 100%;
+				margin-bottom: 10%;
+				border: none;
+				border-bottom: .1em outset yellow;
+				font-size: 1em;
+				color: #E1E1E1;
+				}
+
+#form-admin .div-admin{
+	position: relative;
+	width: 100%;
+}
+
+.lab-admin {
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #E1E1E1;
+}
+
+.lab-admin .active-text {
+	top: -30%;
+}
+
+ // -------------------------
+
 article.head-block { 
 	margin-top: 5%;
 	margin-bottom: 5%;
@@ -579,35 +705,36 @@ article.scedule {
 }
 	
 .schedule-section {
-	@include yellow-block;
+	background: transparent;
 	margin: 3%;
 	padding-top: 5%;
 	height: auto;
-	border-radius: .5em;
+	transition: 1s;
 
-		i.far {
-			display: flex;
-			justify-content: center;
-			font-size: 2.8em;
+		.far, .fas {
+			display: inline-block;
+			margin-right: .3em;
+			font-size: 1.3em;
 		}
 
 		.h-sch {
-			color: black;
 			font-size: 1.8em;
 			text-align: center;
-			color: #991A1A;
+			color: $vividRed;
 		}
 
 		.day-sch {
 			font-size: 1.3em;
 			font-weight: 700;
 			text-align: center;
+			color: $vividRed;
 		}
 
 		.time-sch {
 			font-size: 1.2em;
 			font-weight: 800;
 			text-align: center;
+			color: yellow;
 		}
 
 		.format-sch {
@@ -615,53 +742,173 @@ article.scedule {
 			font-weight: 800;
 			text-align: center;
 			font-style: Italic;
+			color: #E1E1E1;
 		}
-
-		mark {
-		@include dark-block;
-		color: yellow;
-		padding: .5em;
-		border-radius: .5em;
-		}
-
 }
 
-.schedule-section-white {
-	@include light-block; 
+#get-free-button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background-color: transparent;
+	margin: 0 auto;
+	margin-top: 3%;
+	padding: 2%;
+	width: 50%;
+	border-radius: 0.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-style: "Arial";
+	font-size: 2em;
+	font-weight: 900;
+	letter-spacing: .1em;
+	color: $vividRed;
+	overflow: hidden;
+	transition: .2s;
+}
 
-	mark {
+#get-free-button:hover {
+	box-shadow: 0px 0px 30px 14px rgba(236,8,0,1);
+	transition-delay: 2s;
+}
+
+.free-button {
+	position: absolute;
+	display: block;
+}
+
+.free-button:nth-child(1) {
+	background: #f00000;
+	background: -webkit-linear-gradient(to right, #f00000, #dc281e);
+	background: linear-gradient(to right, #f00000, #dc281e);
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 3px;
+}
+
+#get-free-button:hover .free-button:nth-child(1) {
+	left: 100%;
+	transition: 1s;
+}
+
+.free-button:nth-child(2) {
+	background: #f00000;
+	background: -webkit-linear-gradient(to right, #f00000, #dc281e);
+	background: linear-gradient(to right, #f00000, #dc281e);
+	top: -100%;
+	right: 0;
+	width: 3px;
+	height: 100%;
+}
+
+#get-free-button:hover .free-button:nth-child(2) {
+	top: 100%;
+	transition: 1s;
+	transition-delay: .25s;
+}
+
+.free-button:nth-child(3) {
+	background: #f00000;
+	background: -webkit-linear-gradient(to right, #f00000, #dc281e);
+	background: linear-gradient(to right, #f00000, #dc281e);
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 3px;
+}
+
+#get-free-button:hover .free-button:nth-child(3) {
+	right: 100%;
+	transition: 1s;
+	transition-delay: .5s;
+}
+
+.free-button:nth-child(4) {
+	background: #f00000;
+	background: -webkit-linear-gradient(to right, #f00000, #dc281e);
+	background: linear-gradient(to right, #f00000, #dc281e);
+	bottom: -100%;
+	left: 0;
+	width: 3px;
+	height: 100%;
+}
+
+#get-free-button:hover .free-button:nth-child(4) {
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: .75s;
+}
+
+.boxform {
+	position: fixed;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.6);
+	transform: translateX(-100%);
+	animation: bgModal .5s ease forwards;
+}
+
+.opens {
+	display: flex;
+}
+
+.boxform-content {
+	position: relative;
+	width: 50%;
+	height: 60%;
+	margin: 0;
+	transform: scale(0);
+	animation: lightImage 1s ease forwards;
+	animation-delay: 1s;
+}
+
+.boxform-close {
+	position: absolute;
+	top: 1%;
+	right: 0;
+	font-size: 2em;
 	color: #E1E1E1;
-	}
+	cursor: zoom-out;
+	z-index: 101;
 }
 
-
+.boxform-close:hover {
+	color: yellow;
+}
 
 form {
-			background: transparent;
-			padding: 0%;
+			@include dark-block;
+			width: 100%;
+			height: 100%;
+			padding: 1%;
 			font-family: 'Arial';
-			font-size: 1.1em;
-			font-weight: 200;
+			font-size: 1.2em;
+			font-weight: 600;
 			text-align: center;
 			color: yellow;
-			text-shadow: 0 .2em .2em rgba(236,14,29,0.9);
+			border-radius: .5em;
 			
-				span {
+				#free-lesson {
 				display: block;
-				margin-bottom: 5%;
-				font-size: 1.2em;
-				font-weight: 400;
+				margin-top: 1%;
+				font-size: 1.5em;
+				font-weight: 800;
 				text-align: center;
-				color: red;
-				text-decoration: underline;
-				text-shadow: 0 .2em .2em rgba(236,14,29,0.5);
+				color: $vividRed;
 				}
 
-				input{
+				.user{
 				@include light-block;
-				margin: 5%;
+				margin: 2%;
 				padding: 1%;
-				width: 80%; 
+				width: 60%; 
 				border: .1em outset red;
 				border-radius: .3em .3em .3em .3em;
 				font-size: 1em;
@@ -670,12 +917,13 @@ form {
 				}
 
 				#submit {
-				margin-top: 5%;
-				padding: 3%;
+				margin-top: 1%;
+				padding: 1%;
 				background: transparent;
 				width: 30%; 
 				border: .1em outset red;
-				font-size: 1.5em; 
+				border-radius: .3em .3em .3em .3em;
+				font-size: 1.2em; 
 				color: yellow;
 				}
 }
@@ -919,6 +1167,19 @@ section.my-gallery {
 			color: #E1E1E1;
 			}
 		}
+}
+
+.main-video {
+	display: flex;
+	justify-content: center;
+}
+
+video {
+	border-radius: .5em;
+}
+
+video:focus {
+outline: none;
 }
 
 .gallery-items {
