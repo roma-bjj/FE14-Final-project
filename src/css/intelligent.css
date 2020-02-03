@@ -59,6 +59,37 @@ body {
   background: #000000;
   background: linear-gradient(to right, #434343, #000000);
   font-family: "Arial";
+  color: #E1E1E1;
+}
+
+.all-container {
+  display: block;
+}
+
+.all-container-none {
+  display: none;
+}
+
+.gallery-container {
+  display: none;
+}
+
+.div-post {
+  background: #ADA996;
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  display: none;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  color: red;
+}
+
+.div-post-opens {
+  display: flex;
+}
+
+.menu-admin {
+  display: none;
 }
 
 /* ---All Styles for <HEADER>--- */
@@ -86,39 +117,34 @@ ul.main-menu-list {
   position: relative;
   list-style: none;
   padding-left: 0;
+  padding-right: 0;
   width: 100%;
+  height: 10vh;
   margin: 0;
+  border-bottom: 0.1em outset #E1E1E1;
 }
 
 ul.main-menu-list li.main-list {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  float: left;
   position: relative;
   margin-right: 0;
   padding: 0;
-  width: 10em;
-  height: 4.1em;
+  width: 16.66%;
+  height: 10vh;
   margin-right: 0;
-}
-
-ul.main-menu-list li.main-list:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 12em;
-  height: 4em;
   border-right: 0.1em outset #E1E1E1;
 }
 
-ul.main-menu-list li.last-main-list:after {
-  display: none;
+ul.main-menu-list li.last-main-list {
+  border-right: 0.1em outset transparent;
 }
 
 ul.main-menu-list li.main-list a {
   position: absolute;
   text-decoration: none;
+  text-align: center;
   font-style: "Arial";
   font-size: 1.2em;
   font-weight: 600;
@@ -140,8 +166,7 @@ ul.second-level {
   list-style: none;
   margin-top: 6.3em;
   padding-left: 0;
-  left: -21%;
-  width: 14em;
+  width: 100%;
   border: 0.1em outset transparent;
   z-index: 99;
 }
@@ -364,15 +389,20 @@ ul.icon-contact li.icon:nth-child(4):after {
   opacity: 0.3;
 }
 
-i#i-admin {
+.i-admin {
+  display: none;
   margin-left: 1%;
   font-size: 1.5em;
   color: #E1E1E1;
   opacity: 0.05;
 }
 
-i#i-admin:hover {
+.i-admin:hover {
   opacity: 1;
+}
+
+.visible {
+  display: block;
 }
 
 .adminform {
@@ -472,6 +502,57 @@ i#i-admin:hover {
 
 .lab-admin .active-text {
   top: -30%;
+}
+
+.l-adminform {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 110;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateX(-100%);
+  animation: bgModal 0.5s ease forwards;
+}
+
+.l-adminform .l-visible {
+  display: none;
+}
+
+.l-adminform-content {
+  width: 40%;
+  height: 40%;
+  margin: 0;
+  transform: scale(0);
+  animation: lightImage 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.l-adminform-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2em;
+  color: #E1E1E1;
+  cursor: zoom-out;
+  z-index: 111;
+}
+
+.l-adminform-close:hover {
+  color: yellow;
+}
+
+.l-span-modal {
+  display: block;
+  margin-top: 1%;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align: center;
+  color: #EC0800;
 }
 
 article.head-block {
@@ -599,6 +680,7 @@ article#head-block-second {
 .hb-section .hb-info p {
   font-family: "Arial";
   font-size: 1.2em;
+  color: black;
 }
 .hb-section .hb-info a {
   text-decoration: none;
@@ -919,7 +1001,7 @@ article#athletes h2 a {
 
 .athlet-div {
   backfround: transparent;
-  display: none;
+  display: flex;
   justify-content: space-around;
   width: 100%;
   padding: 0;

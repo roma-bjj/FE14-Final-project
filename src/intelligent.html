@@ -18,17 +18,17 @@
 
 	<nav class="main-menu">
 		<ul class="main-menu-list"> 
-			<li class="main-list"><a href="">Home</a></li>
-			<li class="main-list"><a href="">About</a>
+			<li class="main-list"><a href=" http://localhost:9000">Home</a></li>
+			<li class="main-list"><a id="a-about" href="">About</a>
 				<ul class="second-level first">
 					<li><a id="a-history" href="">History</a></li>
-					<li><a href="">Athletes</a></li>
+					<li><a id="a-athletes" href="">Athletes</a></li>
 				</ul>
 			</li>
-			<li class="main-list"><a href="">News</a>
+			<li class="main-list"><a id="a-news" href="">News</a>
 				<ul class="second-level second">
-					<li><a href="">Gallery</a></li>
-					<li><a href="">Posts</a></li>
+					<li><a id="a-gallery" href="#">Gallery</a></li>
+					<li><a id="posts" href="">Posts</a></li>
 				</ul>
 			</li>
 			<li class="main-list"><a href="">Seminars</a></li>
@@ -40,10 +40,7 @@
 	<img id="main-logo" src="img/main-img/main-logo.png" alt="main-logo">
 </header>
 
-<div id="all-container">
-
-<i id="i-admin" class="fas fa-user-shield"></i>
-
+<i class="i-admin fas fa-user-shield"></i>
 <div class="adminform">
 	<div class="adminform-content">
 		<div class="adminform-close">&times;</div>
@@ -61,6 +58,8 @@
 		</form>
 	</div>
 </div>
+
+<div  class="all-container">
 
 <article id="head-block">
 	<h1>Respect everyone Fear no one</h1>
@@ -99,6 +98,7 @@
 				<p>2019 Gi IBJJF European champion (brown belts)</p>
 				<p>2019 Gi IBJJF Absolute European champion (brown belts)</p>
 				<p>2019 2 place - Abu Dabi World Masters Jiu-Jitsu Championship</p>
+				<p>2020 2 place - Gi IBJJF European Championship (black belts)</p>
 				<a href="https://instagram.com/annahayduchenko?igshid=1pme417gvxcv1" target="blank"><i class="fab fa-instagram"></i>annahayduchenko</a>
 			</div>
 		</section>
@@ -179,11 +179,11 @@
 		<form id="form-free" action="#" method="post" autocomplete="off" enctype="text/plane">
 			<span id="free-lesson">FREE LESSON</span> <br>
 			<label> Name Surname <br>
-			<input class="user" type="text" required placeholder="Name Surname" maxlength="100" /></label> <br>
+			<input class="user user-name" type="text" required placeholder="Name Surname" maxlength="100" /></label> <br>
 			<label> Instagram / Facebook / Telegram <br>
-			<input class="user" type="text" required placeholder="@Instagram" maxlength="150" /></label> <br>
+			<input class="user user-insta" type="text" required placeholder="@Instagram" maxlength="150" /></label> <br>
 			<label>Telephone (Ukraine) <br>
-			<input class="user" type="tel" placeholder="+38-0XX-XXX-XX-XX" pattern="[\+]\d{2}[\-]\d{3}[\-]\d{3}[\-]\d{2}[\-]\d{2}" title="enter in the specified format" /></label> <br>
+			<input class="user user-number" type="tel" placeholder="+38-0XX-XXX-XX-XX" pattern="[\+]\d{2}[\-]\d{3}[\-]\d{3}[\-]\d{2}[\-]\d{2}" title="enter in the specified format" /></label> <br>
 			<input id="submit" type="submit" value="sing up"/>
 		</form>
 	</div>
@@ -208,16 +208,227 @@
 		<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.2509524408506!2d30.531949990756864!3d50.45144074017285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa54c6af06b%3A0xd89dc64da4374cd1!2sIntelligent%20Jiu-Jitsu%20Academy!5e0!3m2!1sen!2sua!4v1578318899731!5m2!1sen!2sua" width="450" height="370" frameborder="0" style="border:2px outset black; border-radius: 0.5em" allowfullscreen=""></iframe>
 	</section>
 </article>
-
-<form action="" id="write-news">
-	<input class="w-news" type="text">
-	<input class="sub-news" type="submit" disabled>
-</form>
-
-<div id="list"></div>
-
 </div>
 
+<div class='gallery-container'>
+	<section class="my-gallery">
+		
+			<div class="section-title">
+				<h1>Gallery</h1>
+			</div>
+	
+<div class="main-video">	
+<video src="video/Intelligent.mp4" poster="video/video-dark.jpg" controls></video>
+</div>
+
+	<article class="accordeon">
+		<div class="card">
+			<div class="card-header">
+				<h2 id="card-h1">Competitions</h2>
+			</div>
+				<div class="card-body">
+					
+					<div class="gallery-items gallery-items-first">
+			<div class="g-item">
+				<img src="img/others-img/comp/c1.jpg" alt="" class="g-img g-img">
+				<div class="overlay">
+					<h3>Anna Hayduchenko</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/comp/c2.jpg" class="g-img">
+				<div class="overlay">
+					<h3>Sophiya Yaremych</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/comp/с3.jpg" alt="" class="g-img">
+				<div class="overlay">
+					<h3>Borys Borysenko</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/comp/c4.jpg" alt="" class="g-img g-img">
+				<div class="overlay">
+					<h3>Taisia Svintsitska</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/comp/c5.jpg" class="g-img">
+				<div class="overlay">
+					<h3>NAGA Germany</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/comp/c6.jpg" alt="" class="g-img">
+				<div class="overlay">
+					<h3>Myhaylo Artsymovych</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/comp/c7.jpg" class="g-img">
+				<div class="overlay">
+					<h3>Kopenhagen Open</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/comp/c8.jpg" alt="" class="g-img">
+				<div class="overlay">
+					<h3>Kyiv Open</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+		</div>
+
+
+				</div>
+		</div>
+	</article>
+
+	<article class="accordeon">
+		<div class="card">
+			<div class="card-header">
+				<h2 id="card-h2">Hospitality and Friendship</h2>
+			</div>
+				<div class="card-body">
+
+					<div class="gallery-items gallery-items-second">
+			<div class="g-item">
+				<img src="img/others-img/lesson/l1.jpg" alt="" class="g-img g-img-two">
+				<div class="overlay">
+					<h3>Team Nogueira</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/lesson/l2.jpg" class="g-img g-img-two" g-img-two>
+				<div class="overlay">
+					<h3>Gui Mendes</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/lesson/l3.jpg" alt="" class="g-img g-img-two">
+				<div class="overlay">
+					<h3>Frota Academy</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/lesson/l4.jpg" alt="" class="g-img g-img-two">
+				<div class="overlay">
+					<h3>Felipe Pena</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/lesson/l5.jpg" class="g-img g-img-two">
+				<div class="overlay">
+					<h3>Paul Stolyar</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/lesson/l6.jpg" alt="" class="g-img g-img-two">
+				<div class="overlay">
+					<h3>Soula Ribeiro</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/lesson/l7.jpg" class="g-img g-img-two">
+				<div class="overlay">
+					<h3>William Dias</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/lesson/l8.jpg" alt="" class="g-img g-img-two">
+				<div class="overlay">
+					<h3>Hussein Abbas-Zade</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+					
+				</div>
+			</div>
+	</article>
+
+	<article class="accordeon">
+		<div class="card">
+			<div class="card-header">
+				<h2 id="card-h3">Traveling</h2>
+			</div>
+				<div class="card-body">
+
+					<div class="gallery-items gallery-items-third">
+			<div class="g-item">
+				<img src="img/others-img/traveling/t1.jpg" alt="" class="g-img g-img">
+				<div class="overlay">
+					<h3>Rome</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/traveling/t2.jpg" class="g-img">
+				<div class="overlay">
+					<h3>Brazil</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/traveling/t3.jpg" alt="" class="g-img">
+				<div class="overlay">
+					<h3>Cabo da Roca</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/traveling/t4.jpg" alt="" class="g-img g-img">
+				<div class="overlay">
+					<h3>Ocean</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/traveling/t5.jpg" class="g-img">
+				<div class="overlay">
+					<h3>Atlantic Ocean</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/traveling/t6.jpg" alt="" class="g-img">
+				<div class="overlay">
+					<h3>Switzerland</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/traveling/t7.jpg" class="g-img">
+				<div class="overlay">
+					<h3>Mount Pilatos</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+			<div class="g-item">
+				<img src="img/others-img/traveling/t8.jpg" alt="" class="g-img">
+				<div class="overlay">
+					<h3>Lisbon</h3><i class="fas fa-search-plus"></i>
+				</div>
+			</div>
+		</div>
+					
+				</div>
+		</div>
+	</article>
+
+<div class="lightbox">
+	<div class="lightbox-content">
+		<div class="lightbox-close">&times;</div>
+		<img src="" class="lightbox-img">
+		<div class="lightbox-caption"><span class="lightbox-text"></span><span class="lightbox-counter"></span></div>
+	</div>
+</div>
+</section>
+</div>
+<article class="menu-admin">
+<div class="lesson">
+	<h3 class="h3-lesson">Lesson</h3>
+</div>
+<form action="#" class="form-post">
+	<input type="text" class="post-text">
+	<input type="file" class="post-img">
+	<input type="submit" class="post-submit">
+</form>
+</article>
+<div class="div-post">
+	<h3 class="h3-post">Post</h3>
+</div>
 <footer>
 		<section id="menu-icon">
 		<ul class="icon-contact">
@@ -230,6 +441,6 @@
 	</section>
 </footer>
 <script type="module" src="./js/index.js"></script>
-<script type="text/javascript" src="js/intelligent.js"></script>
+
 </body>
 </html>

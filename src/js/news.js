@@ -1,4 +1,5 @@
 // Gallery
+
 const galeryItems = document.querySelector('.gallery-items').children;
 const galeryItemsSecond = document.querySelector('.gallery-items-second').children;
 const galeryItemsThird = document.querySelector('.gallery-items-third').children;

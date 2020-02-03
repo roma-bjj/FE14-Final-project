@@ -1,0 +1,30 @@
+[
+{"h2": 
+	{
+	"@id": "h-history",
+      "a": {
+        "@name": "history",
+        "#text": "History"
+      }
+    }
+},
+
+{"article": 
+    {
+      "@id": "history",
+      "img": {
+      "@src": "../img/others-img/team.jpg"},
+      "section": {
+        "@id": "info-history", 
+        	"p": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat asperiores natus eos, labore quas tenetur cumque impedit quidem molestiae beatae quia atque, architecto perferendis at repellendus ullam. Labore, consectetur, saepe.",
+          "Quaerat, rem amet eos impedit nisi, totam natus odit, animi mollitia perferendis rerum quis placeat quod architecto neque repellendus maxime reiciendis enim facere nihil. Voluptatem architecto dolorem voluptate illo tempore!",
+          "Voluptate harum vel quisquam atque dolore, obcaecati, doloribus sapiente autem qui deleniti quae dolorum eveniet architecto consequatur numquam tempora consequuntur aperiam aliquam. Error voluptas, explicabo odio dignissimos quod animi nam.",
+          "Esse tempore officiis dolor recusandae quod magnam mollitia distinctio eius quaerat vitae reprehenderit maiores amet cupiditate, repudiandae ab quam saepe rem commodi enim quae quos magni, molestias obcaecati? Sapiente, doloribus.",
+          "Atque, facilis harum quam totam sapiente tempora cum eveniet quidem, eaque aliquam illum voluptate delectus. Voluptatem architecto perferendis tempora facere, assumenda, amet nesciunt modi officiis, nihil hic nemo adipisci culpa!"
+        ]
+        }
+        }
+    
+}
+]
